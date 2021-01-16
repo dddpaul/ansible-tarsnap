@@ -1,5 +1,5 @@
 - name: Install tarsnapper wrapper
-  easy_install: name=tarsnapper
+  pip: name=tarsnapper
 
 - name: Install tarsnapper configuration file
   copy: src={{ tarsnap_tarsnapper_conf }} dest=/root/tarsnapper.conf mode=644
